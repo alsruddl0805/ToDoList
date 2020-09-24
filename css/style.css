@@ -48,7 +48,12 @@ div#todoArea input {
     font-size: 15px;
     outline: none;
 }
-div#todoArea ul {
+
+div#listArea {
+    display: flex;
+}
+
+div#listArea ul {
     width: 100%;
     height: 300px;
     list-style-type: none;
@@ -60,7 +65,7 @@ div#todoArea ul {
     width: 80%;
     height: 35px;
     line-height: 35px;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 5px;
     margin-left: 10%;
     background-color: rgb(247, 248, 255);
@@ -72,38 +77,50 @@ div#todoArea ul {
     background-color: rgb(217, 221, 252);
 }
 
-#todolist li.liChk {
+#donelist li {
+    width: 80%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-left: 10%;
     text-decoration: line-through;
     background-color: rgb(255, 237, 244);
     border-left: 4px solid salmon;
+    cursor: pointer;
 }
 
-#todolist li.liChk:hover {
+#donelist li:hover {
     background-color: rgb(255, 206, 225);
 }
 
-#todoArea i.fa-minus {
-    float: right;
-    padding: 10px;
-}
-
-#todoArea i.fa-minus:hover {
+#listArea i.fa-check:hover {
     color: tomato;
 }
 
-div#todoArea button#allDel {
-    width: 51%;
+#doneIcon {
+    background-color: rgba(255,255,255,0.0);
     border: none;
-    background-color: #fff;
-    height: 33px;
-    margin-top: 10px;
-    border-radius: 20px;
-    font-size: 15px;
-    cursor: pointer;
     outline: none;
+    cursor: pointer;
+    float: right;
+    padding: 10px 10px 10px 5px;
 }
 
-div#todoArea button#allDel:hover {
+#doneIcon:hover {
+    color: tomato;
+}
+
+#delIcon {
+    background-color: rgba(255,255,255,0.0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-top: 10px;
+    float: right;
+}
+
+#delIcon:hover {
     color: tomato;
 }
 

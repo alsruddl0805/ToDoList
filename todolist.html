@@ -4,44 +4,38 @@
     <meta charset="UTF-8">
     <title>To do List</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="script/jquery-3.5.1.min.js"></script>
     <script defer src="script/script.js"></script>
 </head>
 <body>
 
-    <div id="wrap">
+<div id="wrap">
 
     <div id="todo">
 
         <div id="clockArea">
-
             <h1>To Do List</h1>
-
             <div id="clock"></div>
-
         </div>
 
         <div id="todoArea">
-
             <p>Write your To Do !</p>
+            <form class= "todoForm">
+                <input type="text" placeholder="Press Enter" id="inputText" autofocus>
+            </form>
+        </div>
 
-            <input type="text" placeholder="Press Enter" id="inputText" autofocus>
-
-            <button id="allDel" onclick="allDelete()">All Delete</button>
-
+        <div id="listArea">
             <ul id="todolist"></ul>
-
+            <ul id="donelist"></ul>
         </div>
 
         <div id="footer">
-
             <p>ming © 2020</p>
-
         </div>
 
     </div>
 
 </div>
+
 </body>
 </html>
